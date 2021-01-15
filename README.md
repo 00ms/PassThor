@@ -1,4 +1,5 @@
-# PassThor
+![](https://img.shields.io/badge/version-1.0-lightgrey.svg)
+
 
 This is a password generating tool
 
