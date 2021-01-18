@@ -23,16 +23,20 @@ print(f"{bcolors.HEADER}""""
 
 """)
 
-password_length = 9    # you can change this to whatever value you like
+x = input(f"{bcolors.OKBLUE}" + 'How long do you need your password length to be eg: 10 ? \n : ').lower()
+x = int(x)
+
+password_length = x    # dont change you dumb ass 
 possible_characters = "abcdefghijklmnopqrstuvwxyz12345613123sda*_x7890"
 
 random_character_list = [random.choice(possible_characters) for i in range(password_length)]
 password_s = "".join(random_character_list)
 
-prompt1 = input(f"{bcolors.OKCYAN}" + 'Do you want to Generate strong password type "yes" to generate \n : ').lower()
+time.sleep(0.7)
+prompt1 = input(f"{bcolors.OKCYAN}" + 'please type "yes" to generate \n : ').lower()
 
 if prompt1 == 'yes':
-    time.sleep(0.5)
+    time.sleep(0.8)  #you can change the value to make it process fast 
     print(f"{bcolors.OKBLUE}" + "your password is " + password_s)
 elif prompt1 == 'no':
     print('Oopsies')
